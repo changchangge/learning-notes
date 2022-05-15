@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+      .box{
+        width:500px;
+        height: 500px;
+      }
+      .box{
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+      }
+      .col{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 100%;
+      }
+      .one{
+        display:inline;
+        width:30px;
+        height:30px;
+        background-color: black;
+      }
+      #center{
+        display: block;
+      }
+      .frame{
+        display: flex;
+        height:30px;
+        width:100%;
+        justify-content: center;
+      }
+    </style>
+    <body>
+      <div class="box">
+        <div class="col">
+          <div class="one"></div>
+          <div class="one"></div>
+        </div>
+        <div class="frame">
+          <div class="one" id="center"></div>
+        </div>
+        <div class="col">
+          <div class="one"></div>
+          <div class="one"></div>
+        </div>
+      </div>
+    </body>
+</html>
